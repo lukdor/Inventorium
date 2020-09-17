@@ -1,24 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yo9-DV-qGh">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstScreen" customModule="InventoriumProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inventoriumLogo1" translatesAutoresizingMaskIntoConstraints="NO" id="b90-K9-s6F">
+                                <rect key="frame" x="20" y="64" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="RX3-ZK-Im4"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="YIz-9F-kqc">
+                                <rect key="frame" x="20" y="314" width="374" height="150"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-MAIL" textAlignment="natural" minimumFontSize="17" background="clear" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7qr-hG-yzl">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zyk-oc-gUC">
+                                        <rect key="frame" x="0.0" y="99.666666666666686" width="374" height="50.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ChF-lI-dyI"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="hRp-KI-Rg5">
+                                <rect key="frame" x="0.0" y="514" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiS-YA-aA8">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="50"/>
+                                        <state key="normal" title="Register"/>
+                                        <connections>
+                                            <segue destination="xlc-ox-UEy" kind="show" id="sx4-6q-Piz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2c-iT-bz3">
+                                        <rect key="frame" x="232" y="0.0" width="182" height="50"/>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="QiS-YA-aA8" firstAttribute="leading" secondItem="hRp-KI-Rg5" secondAttribute="leading" id="4a9-Ch-HSL"/>
+                                    <constraint firstAttribute="trailing" secondItem="I2c-iT-bz3" secondAttribute="trailing" id="E5g-Vj-dE4"/>
+                                    <constraint firstAttribute="height" constant="50" id="FIQ-8L-yFi"/>
+                                    <constraint firstAttribute="bottom" secondItem="QiS-YA-aA8" secondAttribute="bottom" id="QQ8-QL-RHS"/>
+                                    <constraint firstAttribute="bottom" secondItem="I2c-iT-bz3" secondAttribute="bottom" id="l61-h3-tYE"/>
+                                    <constraint firstItem="I2c-iT-bz3" firstAttribute="top" secondItem="hRp-KI-Rg5" secondAttribute="top" id="ndV-0S-OLj"/>
+                                    <constraint firstItem="QiS-YA-aA8" firstAttribute="top" secondItem="hRp-KI-Rg5" secondAttribute="top" id="xoS-ir-gW2"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b90-K9-s6F" secondAttribute="trailing" constant="20" id="7TA-ne-oha"/>
+                            <constraint firstItem="hRp-KI-Rg5" firstAttribute="top" secondItem="YIz-9F-kqc" secondAttribute="bottom" constant="50" id="MTw-Z3-TGl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YIz-9F-kqc" secondAttribute="trailing" constant="20" id="O1f-16-QqO"/>
+                            <constraint firstItem="YIz-9F-kqc" firstAttribute="top" secondItem="b90-K9-s6F" secondAttribute="bottom" constant="50" id="PxB-Z4-jVV"/>
+                            <constraint firstItem="YIz-9F-kqc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dwu-hC-oAH"/>
+                            <constraint firstItem="b90-K9-s6F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="e8R-Z9-8Ok"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hRp-KI-Rg5" secondAttribute="trailing" id="ecq-9R-fuM"/>
+                            <constraint firstItem="hRp-KI-Rg5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vqo-3D-pra"/>
+                            <constraint firstItem="b90-K9-s6F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yjO-7l-I4R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="9U3-B8-r5V"/>
+                    <connections>
+                        <outlet property="FSEmailTextField" destination="7qr-hG-yzl" id="AH2-iS-dLJ"/>
+                        <outlet property="FSLoginButton" destination="I2c-iT-bz3" id="JIn-bf-Stz"/>
+                        <outlet property="FSPasswordTextField" destination="zyk-oc-gUC" id="Tt4-Lr-ih5"/>
+                        <outlet property="FSRegisterButton" destination="QiS-YA-aA8" id="1QU-ZU-9BE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DBm-dy-qiL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yo9-DV-qGh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RFR-Bx-iv8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PDf-80-GDK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SER-zo-DVL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+        </scene>
+        <!--Register View-->
+        <scene sceneID="CRc-Dz-SXl">
+            <objects>
+                <viewController id="xlc-ox-UEy" customClass="RegisterView" customModule="InventoriumProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mTC-Bt-0If">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Kyb-fw-uAi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bmz-LA-7rI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcU-ww-m0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1883" y="113"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clear" catalog="system" width="128" height="114"/>
+        <image name="inventoriumLogo1" width="200" height="200"/>
+    </resources>
 </document>
