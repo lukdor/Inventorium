@@ -17,7 +17,7 @@ class FirstScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
+        view.setGradientBackground(colorOne: UIColor(rgb: 0x333333), colorTwo: UIColor(rgb: 0x666666))
         addTextFields()
         /**
          purposely commenting addbuttons
@@ -26,6 +26,7 @@ class FirstScreen: UIViewController {
          
          addButtons()
          */
+        addButtons()
     }
     
     
@@ -62,26 +63,30 @@ extension FirstScreen: UITextFieldDelegate {
          textField.layer.borderColor = UIColor.white.cgColor
          textField.layer.borderColor = UIColor(rgb: 0x234567).cgColor
          */
+         textField.layer.borderColor = UIColor.white.cgColor
         /// changing the border width
         /**
          textField.layer.borderWidth = <int>
          */
+        textField.layer.borderWidth = 1
         /// changing the background color
         /**
          textField.backgroundColor = .clear
          textField.backgroundColor = .blue / .white / whatever
          textField.backgroundColor = UIColor(rgb: 0x<hex color code>)
          */
+        textField.backgroundColor = .clear
         /// changing textfield placeholder and its color
-        /**
+        
          textField.attributedPlaceholder = NSAttributedString(string: "\(placeholder)", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
-         */
+         
         /// Changing the typed text color
         /**
          textField.textColor = .white
          or
          textField.textColor = UIColor(rgb: 0x<color hex value>)
          */
+        textField.textColor = .white
     }
 }
 
@@ -90,7 +95,8 @@ extension FirstScreen: UITextFieldDelegate {
 extension FirstScreen {
     // call this function whenever you want to make changed to the buttons
     func addButtons () {
-        //designButton(button: FSLoginButton, placegolder: "Login")
+        designButton(button: FSLoginButton, placegolder: "Login")
+        designButton(button: FSRegisterButton, placegolder: "Register")
     }
     
     
@@ -105,22 +111,20 @@ extension FirstScreen {
         /**
          button.layer.borderColor = goldColor.cgColor
          */
-        
         /// <changing the background color>
         /**
          button.backgroundColor = UIColor(add some coloring)
          */
-        
+        button.backgroundColor = .clear
         /// <changing border width>
         /**
          button.layer.borderWidth = 1
          */
-        
         /// <to change the placeholder use this>
         /**
          button.setTitle("\(placegolder)", for: .normal)
          */
-        
+        button.setTitle("\(placegolder)", for: .normal)
         /// <adding a shadow to the buttons>
         /**
          button.layer.shadowColor = goldColor.cgColor
@@ -128,5 +132,6 @@ extension FirstScreen {
          button.layer.shadowOpacity = 1
          button.layer.shadowRadius = 6
          */
+        
     }
 }
