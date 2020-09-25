@@ -30,21 +30,15 @@ class WarehouseRegisterView: UIViewController {
  */
 extension WarehouseRegisterView : UITextFieldDelegate {
     func setupTextFields () {
+        warehouseName.delegate = self
+        phonNumber.delegate = self
+        password.delegate = self
+        address.delegate = self
         configureTextFields(textField: warehouseName, placeholder: "Warehouse Name")
         configureTextFields(textField: phonNumber, placeholder: "Phone Number")
         configureTextFields(textField: password, placeholder: "Password")
         configureTextFields(textField: address, placeholder: "Address")
     }
-    
-    func configureTextFields (textField: UITextField, placeholder: String) {
-        textField.delegate = self
-        textField.layer.borderColor = UIColor.white.cgColor
-        textField.layer.borderWidth = 1
-        textField.backgroundColor = .clear
-        textField.attributedPlaceholder = NSAttributedString(string: "\(placeholder)", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
-        textField.textColor = .white
-    }
-    
     func configureButton () {
         registerWarehouse.layer.borderWidth = 1
         registerWarehouse.layer.borderColor = UIColor.white.cgColor

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58062AA4251E7F37008278CC /* textFieldConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58062AA3251E7F37008278CC /* textFieldConfiguration.swift */; };
 		588940D5251296090091D907 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588940D4251296090091D907 /* AppDelegate.swift */; };
 		588940D7251296090091D907 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588940D6251296090091D907 /* SceneDelegate.swift */; };
 		588940D9251296090091D907 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588940D8251296090091D907 /* FirstScreen.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58062AA3251E7F37008278CC /* textFieldConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFieldConfiguration.swift; sourceTree = "<group>"; };
 		588940D1251296090091D907 /* InventoriumProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoriumProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588940D4251296090091D907 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		588940D6251296090091D907 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				58DA112F2512D52B00C7C380 /* ColorImplementations.swift */,
+				58062AA3251E7F37008278CC /* textFieldConfiguration.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				58DA11322512D8F600C7C380 /* UserRegisterView.swift in Sources */,
 				58DA11302512D52B00C7C380 /* ColorImplementations.swift in Sources */,
 				588940D5251296090091D907 /* AppDelegate.swift in Sources */,
+				58062AA4251E7F37008278CC /* textFieldConfiguration.swift in Sources */,
 				588940D7251296090091D907 /* SceneDelegate.swift in Sources */,
 				58E25196251E6CC9002BDC87 /* WarehouseRegisterView.swift in Sources */,
 			);
