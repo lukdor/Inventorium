@@ -51,7 +51,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="xlc-ox-UEy" kind="show" id="sx4-6q-Piz"/>
+                                            <segue destination="xlc-ox-UEy" kind="show" id="Ddc-5s-7kr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2c-iT-bz3">
@@ -130,106 +130,139 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Qde-fF-9WL">
-                                <rect key="frame" x="20" y="64" width="374" height="418"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="289" translatesAutoresizingMaskIntoConstraints="NO" id="9K1-Pd-2mb">
+                                <rect key="frame" x="125" y="194" width="164" height="392"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="POR-7B-OqF">
-                                        <rect key="frame" x="20" y="0.0" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L6i-fn-yEe">
-                                        <rect key="frame" x="20" y="64" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OKu-7c-aKH">
-                                        <rect key="frame" x="20" y="128" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgc-wf-aPg">
-                                        <rect key="frame" x="20" y="192" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OD2-Ua-c1P">
-                                        <rect key="frame" x="20" y="256" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="o3k-AM-6Qv">
-                                        <rect key="frame" x="80.333333333333329" y="320" width="213.66666666666669" height="34"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="G8u-44-WyU">
-                                                <rect key="frame" x="0.0" y="1.6666666666666856" width="213.66666666666666" height="31"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warehouse Worker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxR-r7-cEU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="144.66666666666666" height="31"/>
-                                                        <color key="tintColor" systemColor="placeholderTextColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vhO-cw-dqK">
-                                                        <rect key="frame" x="164.66666666666669" y="0.0" width="51" height="31"/>
-                                                    </switch>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHT-28-eUV">
-                                        <rect key="frame" x="20" y="384" width="334" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfL-d7-gQT">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="51.666666666666664"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="RY1-lI-gBh"/>
+                                            <constraint firstAttribute="height" constant="50" id="3ZY-ku-Ed6"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="titleShadowColor" systemColor="opaqueSeparatorColor"/>
-                                        </state>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Regiter Warehouse"/>
+                                        <connections>
+                                            <segue destination="G9c-V8-9Hd" kind="show" id="JfW-Rg-WEX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbT-FF-a7H">
+                                        <rect key="frame" x="0.0" y="340.66666666666663" width="164" height="51.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2L2-Ey-KRO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Register Person"/>
+                                        <connections>
+                                            <segue destination="kYL-io-txU" kind="show" id="FF4-dR-7Tf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="POR-7B-OqF" firstAttribute="leading" secondItem="Qde-fF-9WL" secondAttribute="leading" constant="20" id="8qM-It-S8x"/>
-                                    <constraint firstAttribute="trailing" secondItem="POR-7B-OqF" secondAttribute="trailing" constant="20" id="MDH-zu-iC9"/>
-                                    <constraint firstAttribute="trailing" secondItem="qHT-28-eUV" secondAttribute="trailing" constant="20" id="QQA-wx-PDr"/>
-                                    <constraint firstAttribute="trailing" secondItem="OKu-7c-aKH" secondAttribute="trailing" constant="20" id="VMf-ai-c5J"/>
-                                    <constraint firstAttribute="trailing" secondItem="cgc-wf-aPg" secondAttribute="trailing" constant="20" id="iVz-lL-hq9"/>
-                                    <constraint firstItem="cgc-wf-aPg" firstAttribute="leading" secondItem="Qde-fF-9WL" secondAttribute="leading" constant="20" id="m9A-dP-xFg"/>
-                                    <constraint firstItem="qHT-28-eUV" firstAttribute="leading" secondItem="Qde-fF-9WL" secondAttribute="leading" constant="20" id="nHc-SX-L4K"/>
-                                    <constraint firstAttribute="trailing" secondItem="OD2-Ua-c1P" secondAttribute="trailing" constant="20" id="qZK-7s-1Gh"/>
-                                    <constraint firstItem="OD2-Ua-c1P" firstAttribute="leading" secondItem="Qde-fF-9WL" secondAttribute="leading" constant="20" id="wPe-RH-tPl"/>
-                                    <constraint firstAttribute="trailing" secondItem="L6i-fn-yEe" secondAttribute="trailing" constant="20" id="xhb-h6-oHK"/>
-                                    <constraint firstItem="OKu-7c-aKH" firstAttribute="leading" secondItem="Qde-fF-9WL" secondAttribute="leading" constant="20" id="xwx-uf-cOv"/>
-                                    <constraint firstItem="L6i-fn-yEe" firstAttribute="leading" secondItem="Qde-fF-9WL" secondAttribute="leading" constant="20" id="yA3-Bu-f5v"/>
+                                    <constraint firstItem="nbT-FF-a7H" firstAttribute="leading" secondItem="9K1-Pd-2mb" secondAttribute="leading" id="5xe-Lb-7g8"/>
+                                    <constraint firstItem="zfL-d7-gQT" firstAttribute="leading" secondItem="9K1-Pd-2mb" secondAttribute="leading" id="Omh-9U-EvB"/>
+                                    <constraint firstAttribute="trailing" secondItem="zfL-d7-gQT" secondAttribute="trailing" id="Q8x-v8-zK4"/>
+                                    <constraint firstItem="zfL-d7-gQT" firstAttribute="top" secondItem="9K1-Pd-2mb" secondAttribute="top" id="uOl-vi-MDz"/>
+                                    <constraint firstAttribute="bottom" secondItem="nbT-FF-a7H" secondAttribute="bottom" id="xHm-RI-r0L"/>
+                                    <constraint firstAttribute="trailing" secondItem="nbT-FF-a7H" secondAttribute="trailing" id="zHY-tZ-uuB"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kyb-fw-uAi"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="Qde-fF-9WL" firstAttribute="leading" secondItem="Kyb-fw-uAi" secondAttribute="leading" constant="20" id="757-Na-tMN"/>
-                            <constraint firstItem="Kyb-fw-uAi" firstAttribute="bottom" secondItem="Qde-fF-9WL" secondAttribute="bottom" constant="20" id="HGz-pW-4BV"/>
-                            <constraint firstItem="Qde-fF-9WL" firstAttribute="top" secondItem="Kyb-fw-uAi" secondAttribute="top" constant="20" id="J21-sR-bzs"/>
-                            <constraint firstItem="Kyb-fw-uAi" firstAttribute="trailing" secondItem="Qde-fF-9WL" secondAttribute="trailing" constant="20" id="eiU-pf-61T"/>
+                            <constraint firstItem="9K1-Pd-2mb" firstAttribute="top" secondItem="Kyb-fw-uAi" secondAttribute="top" constant="150" id="KQc-Sa-Hyh"/>
+                            <constraint firstItem="9K1-Pd-2mb" firstAttribute="width" secondItem="mTC-Bt-0If" secondAttribute="width" multiplier="0.398551" id="OLi-ER-xge"/>
+                            <constraint firstItem="9K1-Pd-2mb" firstAttribute="height" secondItem="mTC-Bt-0If" secondAttribute="height" multiplier="0.474185" id="Y1b-By-a5O"/>
+                            <constraint firstItem="9K1-Pd-2mb" firstAttribute="leading" secondItem="Kyb-fw-uAi" secondAttribute="leading" constant="125" id="aPv-my-vzy"/>
+                            <constraint firstItem="9K1-Pd-2mb" firstAttribute="centerX" secondItem="Kyb-fw-uAi" secondAttribute="centerX" id="jSm-ZF-nqs"/>
+                            <constraint firstItem="9K1-Pd-2mb" firstAttribute="centerY" secondItem="Kyb-fw-uAi" secondAttribute="centerY" id="n8Y-iV-1wq"/>
+                            <constraint firstItem="9K1-Pd-2mb" firstAttribute="leading" secondItem="Kyb-fw-uAi" secondAttribute="leading" constant="125" id="vuY-9d-cIS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Register Screen" id="bmz-LA-7rI">
                         <barButtonItem key="backBarButtonItem" title="  " id="x6r-Bw-VHm"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="RVConfirmPassword" destination="cgc-wf-aPg" id="Tll-oV-j7g"/>
-                        <outlet property="RVEmailTxtField" destination="L6i-fn-yEe" id="gQK-hg-E8K"/>
-                        <outlet property="RVNameTxtField" destination="POR-7B-OqF" id="vgk-HF-wQo"/>
-                        <outlet property="RVOrganization" destination="OD2-Ua-c1P" id="BSP-Zz-BZf"/>
-                        <outlet property="RVPassword" destination="OKu-7c-aKH" id="nyB-SM-Kns"/>
-                        <outlet property="RVRole" destination="vhO-cw-dqK" id="FPQ-h4-shB"/>
-                        <outlet property="Register" destination="qHT-28-eUV" id="mk9-DQ-5tM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcU-ww-m0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1882.608695652174" y="112.50000000000001"/>
+        </scene>
+        <!--Warehouse Register View-->
+        <scene sceneID="QzH-2L-lel">
+            <objects>
+                <viewController id="G9c-V8-9Hd" customClass="WarehouseRegisterView" customModule="InventoriumProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="05h-5b-NQt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fxB-4a-t3P">
+                                <rect key="frame" x="0.0" y="84" width="414" height="198"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6Q-nK-NYN">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Fh-3L-cLE">
+                                        <rect key="frame" x="0.0" y="42" width="414" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lov-Ci-dAl">
+                                        <rect key="frame" x="0.0" y="84" width="414" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kUF-8j-bML">
+                                        <rect key="frame" x="0.0" y="126" width="414" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMM-06-hB3">
+                                        <rect key="frame" x="0.0" y="168" width="414" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="registerClicked:" destination="G9c-V8-9Hd" eventType="touchUpInside" id="Oj7-zi-MD2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MmS-ic-9i9"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="MmS-ic-9i9" firstAttribute="trailing" secondItem="fxB-4a-t3P" secondAttribute="trailing" id="2El-xQ-Pb2"/>
+                            <constraint firstItem="fxB-4a-t3P" firstAttribute="leading" secondItem="MmS-ic-9i9" secondAttribute="leading" id="2mL-VF-S4f"/>
+                            <constraint firstItem="fxB-4a-t3P" firstAttribute="top" secondItem="MmS-ic-9i9" secondAttribute="top" constant="40" id="fyb-lK-62u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="K4c-hN-dZb"/>
+                    <connections>
+                        <outlet property="address" destination="kUF-8j-bML" id="xGz-id-zKc"/>
+                        <outlet property="password" destination="lov-Ci-dAl" id="jRZ-Ts-2ML"/>
+                        <outlet property="phonNumber" destination="1Fh-3L-cLE" id="yfL-cF-ECA"/>
+                        <outlet property="registerWarehouse" destination="WMM-06-hB3" id="gjp-aO-1hi"/>
+                        <outlet property="warehouseName" destination="v6Q-nK-NYN" id="U1e-po-Vbo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JID-yf-STo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2765.217391304348" y="-94.565217391304358"/>
+        </scene>
+        <!--User Register View-->
+        <scene sceneID="fLD-5W-n0I">
+            <objects>
+                <viewController id="kYL-io-txU" customClass="UserRegisterView" customModule="InventoriumProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MXC-ei-nP6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HbZ-sA-qKl"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5dQ-Pq-S28"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzF-Vw-edk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2765" y="629"/>
         </scene>
     </scenes>
     <resources>
@@ -237,12 +270,6 @@
         <image name="inventoriumLogo1" width="200" height="200"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="placeholderTextColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
