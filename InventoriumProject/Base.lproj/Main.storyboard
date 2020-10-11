@@ -130,11 +130,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="289" translatesAutoresizingMaskIntoConstraints="NO" id="9K1-Pd-2mb">
-                                <rect key="frame" x="131" y="190" width="153" height="357"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="289" translatesAutoresizingMaskIntoConstraints="NO" id="9K1-Pd-2mb">
+                                <rect key="frame" x="131" y="190" width="152" height="356"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfL-d7-gQT">
-                                        <rect key="frame" x="0.0" y="0.0" width="153" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="33.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Regiter Warehouse"/>
                                         <connections>
@@ -142,7 +142,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbT-FF-a7H">
-                                        <rect key="frame" x="13" y="323" width="127" height="34"/>
+                                        <rect key="frame" x="12.666666666666657" y="322.66666666666663" width="127" height="33.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Register Person"/>
                                         <connections>
@@ -154,6 +154,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kyb-fw-uAi"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="9K1-Pd-2mb" firstAttribute="centerY" secondItem="mTC-Bt-0If" secondAttribute="centerY" id="3hc-Bk-2nt"/>
+                            <constraint firstItem="9K1-Pd-2mb" firstAttribute="top" secondItem="Kyb-fw-uAi" secondAttribute="top" constant="146" id="czF-8o-2hk"/>
+                            <constraint firstItem="9K1-Pd-2mb" firstAttribute="centerX" secondItem="mTC-Bt-0If" secondAttribute="centerX" id="euE-WO-2WP"/>
+                            <constraint firstItem="9K1-Pd-2mb" firstAttribute="leading" secondItem="Kyb-fw-uAi" secondAttribute="leading" constant="131" id="z0P-IT-PWz"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Register Screen" id="bmz-LA-7rI">
                         <barButtonItem key="backBarButtonItem" title="  " id="x6r-Bw-VHm"/>

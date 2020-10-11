@@ -17,9 +17,11 @@
 		58DA11302512D52B00C7C380 /* ColorImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA112F2512D52B00C7C380 /* ColorImplementations.swift */; };
 		58DA11322512D8F600C7C380 /* UserRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA11312512D8F600C7C380 /* UserRegisterView.swift */; };
 		58E25196251E6CC9002BDC87 /* WarehouseRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E25195251E6CC9002BDC87 /* WarehouseRegisterView.swift */; };
+		71F067693569A6D1E8A4EFB9 /* Pods_InventoriumProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE16705059AF626BD6CAB5F8 /* Pods_InventoriumProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		148A53CC19557FE89B2AD89A /* Pods-InventoriumProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoriumProject.release.xcconfig"; path = "Target Support Files/Pods-InventoriumProject/Pods-InventoriumProject.release.xcconfig"; sourceTree = "<group>"; };
 		58062AA3251E7F37008278CC /* textFieldConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFieldConfiguration.swift; sourceTree = "<group>"; };
 		588940D1251296090091D907 /* InventoriumProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoriumProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588940D4251296090091D907 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		58DA112F2512D52B00C7C380 /* ColorImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorImplementations.swift; sourceTree = "<group>"; };
 		58DA11312512D8F600C7C380 /* UserRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterView.swift; sourceTree = "<group>"; };
 		58E25195251E6CC9002BDC87 /* WarehouseRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseRegisterView.swift; sourceTree = "<group>"; };
+		64D23A8F8045DFD04C63094F /* Pods-InventoriumProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoriumProject.debug.xcconfig"; path = "Target Support Files/Pods-InventoriumProject/Pods-InventoriumProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BE16705059AF626BD6CAB5F8 /* Pods_InventoriumProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InventoriumProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F067693569A6D1E8A4EFB9 /* Pods_InventoriumProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281F53F3D9F6225CD5B86AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE16705059AF626BD6CAB5F8 /* Pods_InventoriumProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D83D4FB20DEA38564609332 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64D23A8F8045DFD04C63094F /* Pods-InventoriumProject.debug.xcconfig */,
+				148A53CC19557FE89B2AD89A /* Pods-InventoriumProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		588940C8251296090091D907 = {
 			isa = PBXGroup;
 			children = (
 				588940D3251296090091D907 /* InventoriumProject */,
 				588940D2251296090091D907 /* Products */,
+				3D83D4FB20DEA38564609332 /* Pods */,
+				281F53F3D9F6225CD5B86AF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 588940E52512960B0091D907 /* Build configuration list for PBXNativeTarget "InventoriumProject" */;
 			buildPhases = (
+				74AC9DFF3C8B17111510DB34 /* [CP] Check Pods Manifest.lock */,
 				588940CD251296090091D907 /* Sources */,
 				588940CE251296090091D907 /* Frameworks */,
 				588940CF251296090091D907 /* Resources */,
+				D4C66DC0EC0C4979AE9861A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +195,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74AC9DFF3C8B17111510DB34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InventoriumProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C66DC0EC0C4979AE9861A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InventoriumProject/Pods-InventoriumProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InventoriumProject/Pods-InventoriumProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InventoriumProject/Pods-InventoriumProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		588940CD251296090091D907 /* Sources */ = {
@@ -322,6 +391,7 @@
 		};
 		588940E62512960B0091D907 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64D23A8F8045DFD04C63094F /* Pods-InventoriumProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -340,6 +410,7 @@
 		};
 		588940E72512960B0091D907 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148A53CC19557FE89B2AD89A /* Pods-InventoriumProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
