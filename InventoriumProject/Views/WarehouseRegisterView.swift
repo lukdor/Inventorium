@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class WarehouseRegisterView: UIViewController {
     @IBOutlet weak var warehouseName : UITextField!
@@ -55,5 +56,7 @@ extension WarehouseRegisterView {
         /*
          make validations and add the warehouse to the database
          */
+        
+        
     }
 }
