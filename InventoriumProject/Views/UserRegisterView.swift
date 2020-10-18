@@ -21,13 +21,16 @@ class UserRegisterView: UIViewController {
     
     @IBOutlet weak var register: UIButton!
     
+    let warehouse_worker = UIButton()
+    
+    let agent = UIButton()
+    
     let role_popup_view : UIView = {
         let popup_view = UIView()
         popup_view.translatesAutoresizingMaskIntoConstraints = false
         popup_view.backgroundColor = UIColor(rgb: 0xFFFFFF).withAlphaComponent(0.5)
         popup_view.clipsToBounds = true
         popup_view.layer.cornerRadius = 20
-        
         return popup_view
     }()
     
@@ -39,8 +42,7 @@ class UserRegisterView: UIViewController {
         return button
     }()
     
-    let warehouse_worker = UIButton()
-    let agent = UIButton()
+
     
     
     override func viewDidLoad() {
@@ -73,6 +75,7 @@ extension UserRegisterView : UITextFieldDelegate {
 /* BUTTON CLICKS */
 extension UserRegisterView {
     @IBAction func roleClicked(_ sender: Any) {
+        resignFirstResponder()
         setPopUpConstraints()
         addpopupbuttons()
         configurePopupView()
@@ -98,6 +101,7 @@ extension UserRegisterView {
                 let data = ["name": usr.name,
                             "email": usr.email,
                             "role": usr.role,
+                            "type": User.userType,
                             "uid" : usr.uid]
                 
                 let db = Firestore.firestore()
