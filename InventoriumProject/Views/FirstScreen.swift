@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 
 class FirstScreen: UIViewController {
     
@@ -28,6 +30,10 @@ class FirstScreen: UIViewController {
          */
         addButtons()
     }
+    
+    
+    
+
     
     
 }
@@ -133,5 +139,35 @@ extension FirstScreen {
          button.layer.shadowRadius = 6
          */
         
+    }
+}
+
+
+extension FirstScreen {
+    @IBAction func loginCliked(_ sender: Any) {
+        let email = FSEmailTextField.text
+        let password = FSPasswordTextField.text
+
+        // find user from the database
+        if email != nil && password != nil {
+            Auth.auth().signIn(withEmail: email!, password: password!) { (result, err) in
+                
+                let db = Firestore.firestore()
+                db.collection("Users").document((result?.user.uid)!).getDocument { (doc, err) in
+                    if let user = doc?.data() {
+                        // get some values
+                        print(user)
+                        
+                        self.navigationController?.pushViewController(LoginView(), animated: true)
+                    }
+                    
+                }
+               
+                
+                // push the loginview
+                
+                
+            }
+        }
     }
 }
