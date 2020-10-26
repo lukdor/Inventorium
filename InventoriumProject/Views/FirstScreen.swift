@@ -16,26 +16,12 @@ class FirstScreen: UIViewController {
     @IBOutlet weak var FSPasswordTextField: UITextField!
     @IBOutlet weak var FSLoginButton: UIButton!
     @IBOutlet weak var FSRegisterButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.setGradientBackground(colorOne: UIColor(rgb: 0x333333), colorTwo: UIColor(rgb: 0x666666))
         addTextFields()
-        /**
-         purposely commenting addbuttons
-         uncomment it when you want to make design changes to the buttons
-         the buttons are still going to be visible when you run the project
-         
-         addButtons()
-         */
         addButtons()
     }
-    
-    
-    
-
-    
-    
 }
 
 
@@ -57,41 +43,10 @@ extension FirstScreen: UITextFieldDelegate {
     
     // if you want to modify the textfields use this function
     func configureTextFields (textField: UITextField, placeholder: String) {
-        /// We can choose colors in different ways
-        /**
-         1) The hex value
-        UIColor(rgb: 0x<hex value>)
-         2) predefined value
-        variable = .white / .black .....
-         */
-        /// changing the border color
-        /**
-         textField.layer.borderColor = UIColor.white.cgColor
-         textField.layer.borderColor = UIColor(rgb: 0x234567).cgColor
-         */
-         textField.layer.borderColor = UIColor.white.cgColor
-        /// changing the border width
-        /**
-         textField.layer.borderWidth = <int>
-         */
+        textField.layer.borderColor = UIColor.white.cgColor
         textField.layer.borderWidth = 1
-        /// changing the background color
-        /**
-         textField.backgroundColor = .clear
-         textField.backgroundColor = .blue / .white / whatever
-         textField.backgroundColor = UIColor(rgb: 0x<hex color code>)
-         */
         textField.backgroundColor = .clear
-        /// changing textfield placeholder and its color
-        
-         textField.attributedPlaceholder = NSAttributedString(string: "\(placeholder)", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
-         
-        /// Changing the typed text color
-        /**
-         textField.textColor = .white
-         or
-         textField.textColor = UIColor(rgb: 0x<color hex value>)
-         */
+        textField.attributedPlaceholder = NSAttributedString(string: "\(placeholder)", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         textField.textColor = .white
     }
 }
@@ -99,7 +54,6 @@ extension FirstScreen: UITextFieldDelegate {
 
 
 extension FirstScreen {
-    // call this function whenever you want to make changed to the buttons
     func addButtons () {
         designButton(button: FSLoginButton, placegolder: "Login")
         designButton(button: FSRegisterButton, placegolder: "Register")
@@ -108,37 +62,8 @@ extension FirstScreen {
     
     // one function to rule all the buttons in this view controller
     func designButton (button : UIButton, placegolder: String) {
-        /// rounded rectangle look
-        /**
-        button.layer.cornerRadius = 20
-        */
-        
-        /// <changing border color>
-        /**
-         button.layer.borderColor = goldColor.cgColor
-         */
-        /// <changing the background color>
-        /**
-         button.backgroundColor = UIColor(add some coloring)
-         */
         button.backgroundColor = .clear
-        /// <changing border width>
-        /**
-         button.layer.borderWidth = 1
-         */
-        /// <to change the placeholder use this>
-        /**
-         button.setTitle("\(placegolder)", for: .normal)
-         */
         button.setTitle("\(placegolder)", for: .normal)
-        /// <adding a shadow to the buttons>
-        /**
-         button.layer.shadowColor = goldColor.cgColor
-         button.layer.shadowOffset = CGSize(width: 1, height: 1)
-         button.layer.shadowOpacity = 1
-         button.layer.shadowRadius = 6
-         */
-        
     }
 }
 
@@ -147,27 +72,37 @@ extension FirstScreen {
     @IBAction func loginCliked(_ sender: Any) {
         let email = FSEmailTextField.text
         let password = FSPasswordTextField.text
-
+        let db = Firestore.firestore()
         // find user from the database
         if email != nil && password != nil {
             Auth.auth().signIn(withEmail: email!, password: password!) { (result, err) in
-                
-                let db = Firestore.firestore()
-                db.collection("Users").document((result?.user.uid)!).getDocument { (doc, err) in
-                    if let user = doc?.data() {
-                        // get some values
-                        print(user)
-                        
-                        self.navigationController?.pushViewController(LoginView(), animated: true)
+                if err != nil {
+                    let alert = UIAlertController(title: "Error", message: "wrong info", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true)
+                } else {
+                    db.collection("Users").document((result?.user.uid)!).getDocument { (doc, err) in
+                        if let user = doc?.data() {
+                            self.enter_login_view(db: db, information: user)
+                        }
                     }
-                    
                 }
-               
-                
-                // push the loginview
-                
-                
             }
         }
     }
+    
+    
+    func enter_login_view (db: Firestore, information: [String:Any]) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let loginViewController = mainStoryboard.instantiateViewController(identifier: "login_storyboard") as? LoginView else {
+            print("Could not find the view controller")
+            return
+        }
+        loginViewController.name = "john"
+        loginViewController.user_info = information
+        navigationController?.pushViewController(loginViewController, animated: true)
+    }
+    
+    
+    
 }

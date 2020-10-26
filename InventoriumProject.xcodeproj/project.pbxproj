@@ -22,6 +22,8 @@
 		58DA11302512D52B00C7C380 /* ColorImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA112F2512D52B00C7C380 /* ColorImplementations.swift */; };
 		58DA11322512D8F600C7C380 /* UserRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA11312512D8F600C7C380 /* UserRegisterView.swift */; };
 		58E25196251E6CC9002BDC87 /* WarehouseRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E25195251E6CC9002BDC87 /* WarehouseRegisterView.swift */; };
+		58E89C2D2546AA8300A25912 /* WarehouseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E89C2C2546AA8300A25912 /* WarehouseScreen.swift */; };
+		58E89C312546AE2800A25912 /* InventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E89C302546AE2800A25912 /* InventoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		58DA112F2512D52B00C7C380 /* ColorImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorImplementations.swift; sourceTree = "<group>"; };
 		58DA11312512D8F600C7C380 /* UserRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterView.swift; sourceTree = "<group>"; };
 		58E25195251E6CC9002BDC87 /* WarehouseRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseRegisterView.swift; sourceTree = "<group>"; };
+		58E89C2C2546AA8300A25912 /* WarehouseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseScreen.swift; sourceTree = "<group>"; };
+		58E89C302546AE2800A25912 /* InventoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +118,22 @@
 		58E25192251E6C1C002BDC87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				58E89C2F2546ADF800A25912 /* TableView Cells */,
 				588940D8251296090091D907 /* FirstScreen.swift */,
 				58DA11312512D8F600C7C380 /* UserRegisterView.swift */,
 				58E25195251E6CC9002BDC87 /* WarehouseRegisterView.swift */,
 				5861E28E253E59A600F158E0 /* LoginView.swift */,
+				58E89C2C2546AA8300A25912 /* WarehouseScreen.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		58E89C2F2546ADF800A25912 /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				58E89C302546AE2800A25912 /* InventoryCell.swift */,
+			);
+			path = "TableView Cells";
 			sourceTree = "<group>";
 		};
 		964DD75BFAA05FCF95DAD314 /* Frameworks */ = {
@@ -255,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E89C2D2546AA8300A25912 /* WarehouseScreen.swift in Sources */,
 				588940D9251296090091D907 /* FirstScreen.swift in Sources */,
 				58DA11322512D8F600C7C380 /* UserRegisterView.swift in Sources */,
 				58C60546253A6356006C0B7B /* UserType.swift in Sources */,
@@ -262,6 +277,7 @@
 				588940D5251296090091D907 /* AppDelegate.swift in Sources */,
 				58313096253BF37200EC0236 /* WarehouseStruct.swift in Sources */,
 				58062AA4251E7F37008278CC /* textFieldConfiguration.swift in Sources */,
+				58E89C312546AE2800A25912 /* InventoryCell.swift in Sources */,
 				588940D7251296090091D907 /* SceneDelegate.swift in Sources */,
 				5861E28F253E59A600F158E0 /* LoginView.swift in Sources */,
 				58E25196251E6CC9002BDC87 /* WarehouseRegisterView.swift in Sources */,
