@@ -3,26 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		059E389440FEE5F807D79872 /* Pods_InventoriumProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C004CDF66E56C5744AF2203 /* Pods_InventoriumProject.framework */; };
 		58062AA4251E7F37008278CC /* textFieldConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58062AA3251E7F37008278CC /* textFieldConfiguration.swift */; };
+		581A6C03253A7A8100D28048 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 581A6C02253A7A8100D28048 /* GoogleService-Info.plist */; };
+		58313096253BF37200EC0236 /* WarehouseStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58313095253BF37200EC0236 /* WarehouseStruct.swift */; };
+		5861E28F253E59A600F158E0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861E28E253E59A600F158E0 /* LoginView.swift */; };
 		588940D5251296090091D907 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588940D4251296090091D907 /* AppDelegate.swift */; };
 		588940D7251296090091D907 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588940D6251296090091D907 /* SceneDelegate.swift */; };
 		588940D9251296090091D907 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588940D8251296090091D907 /* FirstScreen.swift */; };
 		588940DC251296090091D907 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588940DA251296090091D907 /* Main.storyboard */; };
 		588940DE2512960B0091D907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 588940DD2512960B0091D907 /* Assets.xcassets */; };
 		588940E12512960B0091D907 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588940DF2512960B0091D907 /* LaunchScreen.storyboard */; };
+		58C60546253A6356006C0B7B /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C60545253A6356006C0B7B /* UserType.swift */; };
 		58DA11302512D52B00C7C380 /* ColorImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA112F2512D52B00C7C380 /* ColorImplementations.swift */; };
 		58DA11322512D8F600C7C380 /* UserRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA11312512D8F600C7C380 /* UserRegisterView.swift */; };
 		58E25196251E6CC9002BDC87 /* WarehouseRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E25195251E6CC9002BDC87 /* WarehouseRegisterView.swift */; };
-		71F067693569A6D1E8A4EFB9 /* Pods_InventoriumProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE16705059AF626BD6CAB5F8 /* Pods_InventoriumProject.framework */; };
+		58E89C2D2546AA8300A25912 /* WarehouseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E89C2C2546AA8300A25912 /* WarehouseScreen.swift */; };
+		58E89C312546AE2800A25912 /* InventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E89C302546AE2800A25912 /* InventoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		148A53CC19557FE89B2AD89A /* Pods-InventoriumProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoriumProject.release.xcconfig"; path = "Target Support Files/Pods-InventoriumProject/Pods-InventoriumProject.release.xcconfig"; sourceTree = "<group>"; };
+		0C004CDF66E56C5744AF2203 /* Pods_InventoriumProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InventoriumProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8FFEF3C2B3684539899703 /* Pods-InventoriumProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoriumProject.release.xcconfig"; path = "Target Support Files/Pods-InventoriumProject/Pods-InventoriumProject.release.xcconfig"; sourceTree = "<group>"; };
+		4DC377AE72895C10840824B3 /* Pods-InventoriumProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoriumProject.debug.xcconfig"; path = "Target Support Files/Pods-InventoriumProject/Pods-InventoriumProject.debug.xcconfig"; sourceTree = "<group>"; };
 		58062AA3251E7F37008278CC /* textFieldConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFieldConfiguration.swift; sourceTree = "<group>"; };
+		581A6C02253A7A8100D28048 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		58313095253BF37200EC0236 /* WarehouseStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseStruct.swift; sourceTree = "<group>"; };
+		5861E28E253E59A600F158E0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		588940D1251296090091D907 /* InventoriumProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoriumProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588940D4251296090091D907 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		588940D6251296090091D907 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,11 +42,12 @@
 		588940DD2512960B0091D907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		588940E02512960B0091D907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		588940E22512960B0091D907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58C60545253A6356006C0B7B /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 		58DA112F2512D52B00C7C380 /* ColorImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorImplementations.swift; sourceTree = "<group>"; };
 		58DA11312512D8F600C7C380 /* UserRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterView.swift; sourceTree = "<group>"; };
 		58E25195251E6CC9002BDC87 /* WarehouseRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseRegisterView.swift; sourceTree = "<group>"; };
-		64D23A8F8045DFD04C63094F /* Pods-InventoriumProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoriumProject.debug.xcconfig"; path = "Target Support Files/Pods-InventoriumProject/Pods-InventoriumProject.debug.xcconfig"; sourceTree = "<group>"; };
-		BE16705059AF626BD6CAB5F8 /* Pods_InventoriumProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InventoriumProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E89C2C2546AA8300A25912 /* WarehouseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseScreen.swift; sourceTree = "<group>"; };
+		58E89C302546AE2800A25912 /* InventoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,38 +55,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71F067693569A6D1E8A4EFB9 /* Pods_InventoriumProject.framework in Frameworks */,
+				059E389440FEE5F807D79872 /* Pods_InventoriumProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		281F53F3D9F6225CD5B86AF4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BE16705059AF626BD6CAB5F8 /* Pods_InventoriumProject.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3D83D4FB20DEA38564609332 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				64D23A8F8045DFD04C63094F /* Pods-InventoriumProject.debug.xcconfig */,
-				148A53CC19557FE89B2AD89A /* Pods-InventoriumProject.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		588940C8251296090091D907 = {
 			isa = PBXGroup;
 			children = (
 				588940D3251296090091D907 /* InventoriumProject */,
 				588940D2251296090091D907 /* Products */,
-				3D83D4FB20DEA38564609332 /* Pods */,
-				281F53F3D9F6225CD5B86AF4 /* Frameworks */,
+				E4B9BCC2DD98EA6F26312846 /* Pods */,
+				964DD75BFAA05FCF95DAD314 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +83,7 @@
 		588940D3251296090091D907 /* InventoriumProject */ = {
 			isa = PBXGroup;
 			children = (
+				581A6C02253A7A8100D28048 /* GoogleService-Info.plist */,
 				58E25192251E6C1C002BDC87 /* Views */,
 				58DA112E2512D51000C7C380 /* Implementations */,
 				588940E8251296640091D907 /* Delegates */,
@@ -114,6 +109,8 @@
 			children = (
 				58DA112F2512D52B00C7C380 /* ColorImplementations.swift */,
 				58062AA3251E7F37008278CC /* textFieldConfiguration.swift */,
+				58C60545253A6356006C0B7B /* UserType.swift */,
+				58313095253BF37200EC0236 /* WarehouseStruct.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -121,11 +118,39 @@
 		58E25192251E6C1C002BDC87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				58E89C2F2546ADF800A25912 /* TableView Cells */,
 				588940D8251296090091D907 /* FirstScreen.swift */,
 				58DA11312512D8F600C7C380 /* UserRegisterView.swift */,
 				58E25195251E6CC9002BDC87 /* WarehouseRegisterView.swift */,
+				5861E28E253E59A600F158E0 /* LoginView.swift */,
+				58E89C2C2546AA8300A25912 /* WarehouseScreen.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		58E89C2F2546ADF800A25912 /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				58E89C302546AE2800A25912 /* InventoryCell.swift */,
+			);
+			path = "TableView Cells";
+			sourceTree = "<group>";
+		};
+		964DD75BFAA05FCF95DAD314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C004CDF66E56C5744AF2203 /* Pods_InventoriumProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4B9BCC2DD98EA6F26312846 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DC377AE72895C10840824B3 /* Pods-InventoriumProject.debug.xcconfig */,
+				2F8FFEF3C2B3684539899703 /* Pods-InventoriumProject.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				588940E12512960B0091D907 /* LaunchScreen.storyboard in Resources */,
+				581A6C03253A7A8100D28048 /* GoogleService-Info.plist in Resources */,
 				588940DE2512960B0091D907 /* Assets.xcassets in Resources */,
 				588940DC251296090091D907 /* Main.storyboard in Resources */,
 			);
@@ -243,12 +269,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E89C2D2546AA8300A25912 /* WarehouseScreen.swift in Sources */,
 				588940D9251296090091D907 /* FirstScreen.swift in Sources */,
 				58DA11322512D8F600C7C380 /* UserRegisterView.swift in Sources */,
+				58C60546253A6356006C0B7B /* UserType.swift in Sources */,
 				58DA11302512D52B00C7C380 /* ColorImplementations.swift in Sources */,
 				588940D5251296090091D907 /* AppDelegate.swift in Sources */,
+				58313096253BF37200EC0236 /* WarehouseStruct.swift in Sources */,
 				58062AA4251E7F37008278CC /* textFieldConfiguration.swift in Sources */,
+				58E89C312546AE2800A25912 /* InventoryCell.swift in Sources */,
 				588940D7251296090091D907 /* SceneDelegate.swift in Sources */,
+				5861E28F253E59A600F158E0 /* LoginView.swift in Sources */,
 				58E25196251E6CC9002BDC87 /* WarehouseRegisterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,7 +422,7 @@
 		};
 		588940E62512960B0091D907 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64D23A8F8045DFD04C63094F /* Pods-InventoriumProject.debug.xcconfig */;
+			baseConfigurationReference = 4DC377AE72895C10840824B3 /* Pods-InventoriumProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -410,7 +441,7 @@
 		};
 		588940E72512960B0091D907 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 148A53CC19557FE89B2AD89A /* Pods-InventoriumProject.release.xcconfig */;
+			baseConfigurationReference = 2F8FFEF3C2B3684539899703 /* Pods-InventoriumProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
