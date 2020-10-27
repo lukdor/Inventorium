@@ -77,9 +77,7 @@ extension FirstScreen {
         if email != nil && password != nil {
             Auth.auth().signIn(withEmail: email!, password: password!) { (result, err) in
                 if err != nil {
-                    let alert = UIAlertController(title: "Error", message: "wrong info", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                    self.present(alert, animated: true)
+                    self.wrongInfoAlert()
                 } else {
                     db.collection("Users").document((result?.user.uid)!).getDocument { (doc, err) in
                         if let user = doc?.data() {
@@ -98,11 +96,14 @@ extension FirstScreen {
             print("Could not find the view controller")
             return
         }
-        loginViewController.name = "john"
         loginViewController.user_info = information
         navigationController?.pushViewController(loginViewController, animated: true)
     }
     
-    
+    func wrongInfoAlert() {
+        let alert = UIAlertController(title: "Error", message: "wrong info", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
     
 }

@@ -47,8 +47,6 @@ class LoginView: UIViewController {
         warehouseController.products = information["Products"] as! [[String: Any]]
         navigationController?.pushViewController(warehouseController, animated: true)
     }
-    
-    
 }
 
 extension LoginView {
@@ -68,5 +66,4 @@ extension LoginView {
         warehouse_button.layer.borderWidth = 1
         warehouse_button.layer.borderColor = UIColor.white.cgColor
     }
-    
 }

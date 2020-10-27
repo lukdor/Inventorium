@@ -1,16 +1,8 @@
-//
-//  WarehouseScreen.swift
-//  InventoriumProject
-//
-//  Created by John Demirci on 10/25/20.
-//  Copyright © 2020 CSUCI_350. All rights reserved.
-//
-
 import UIKit
 
 class WarehouseScreen: UIViewController {
     
-    
+    var warehouse_info : [String: Any]?
     var filteredProducts = [[String: Any]]()
     var products = [[String: Any]]()
     
@@ -25,39 +17,31 @@ class WarehouseScreen: UIViewController {
         return search
     }()
     
-    // initilization of our tableview
     private let tableView: UITableView = {
        let table = UITableView()
         table.register(InventoryCell.self, forCellReuseIdentifier: InventoryCell.identifier)
         return table
     }()
-
-    var warehouse_info : [String: Any]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         tableView.backgroundColor = .clear
         view.backgroundColor = .black
-        // adding the searchController to the navigation bar
         navigationItem.searchController = searchController
-        // inserting the table view into our screen
         view.addSubview(tableView)
     }
-    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         // attaching our table view all over our screen
         tableView.frame = view.bounds
     }
-
 }
 
-
 extension WarehouseScreen: UITableViewDataSource, UITableViewDelegate {
-
-
+    // number of rows
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
          if isFiltering() {
              return filteredProducts.count
@@ -65,23 +49,21 @@ extension WarehouseScreen: UITableViewDataSource, UITableViewDelegate {
          return products.count
      }
 
-
-    
     // setting upthe row height
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
-    
     
     // this is our cell function for each cell in the table view
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // creating and setting up the cell based on our cusom cell
         guard let cell = tableView.dequeueReusableCell(withIdentifier: InventoryCell.identifier,
                                                        for: indexPath) as? InventoryCell else { return UITableViewCell() }
-         var currentMajor: String
+         var currentProduct: String
+        cell.backgroundColor = .black
          if isFiltering() {
-            currentMajor = filteredProducts[indexPath.row]["Name"] as! String
-             cell.configure(text: currentMajor)
+            currentProduct = filteredProducts[indexPath.row]["Name"] as! String
+             cell.configure(text: currentProduct)
          } else {
             cell.configure(text: products[indexPath.row]["Name"] as! String)
          }
@@ -99,7 +81,6 @@ extension WarehouseScreen: UITableViewDataSource, UITableViewDelegate {
 */
 }
 
-
 extension WarehouseScreen: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         filterContent(searchText: searchBar.text!)
@@ -115,12 +96,8 @@ extension WarehouseScreen: UISearchResultsUpdating {
 
 extension WarehouseScreen {
     func filterContent (searchText: String) {
-        // when the user enters some text on the searchbar we want to filter that and compare it with
-        // what we have in the universities array
         filteredProducts = products.filter({ (str: [String: Any]) -> Bool in
             if isSearchBarEmpty() {
-                // if searchbar is empty then set filtered universities to the whole universities array
-                // since nothing is added to filter out
                 filteredProducts = products
                 return false
             } else {

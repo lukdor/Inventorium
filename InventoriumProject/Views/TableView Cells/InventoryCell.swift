@@ -39,7 +39,7 @@ class InventoryCell: UITableViewCell {
         contentView.addSubview(productNameLabel)
         productNameLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         productNameLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        productNameLabel.widthAnchor.constraint(equalToConstant: 300).isActive = true
+        productNameLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor).isActive = true
         productNameLabel.heightAnchor.constraint(equalTo: contentView.heightAnchor).isActive = true
     }
     
