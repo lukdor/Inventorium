@@ -47,6 +47,8 @@ class LoginView: UIViewController {
         warehouseController.products = information["Products"] as! [[String: Any]]
         navigationController?.pushViewController(warehouseController, animated: true)
     }
+    
+    
 }
 
 extension LoginView {

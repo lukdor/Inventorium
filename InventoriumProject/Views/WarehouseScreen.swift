@@ -31,7 +31,16 @@ class WarehouseScreen: UIViewController {
         view.backgroundColor = .black
         navigationItem.searchController = searchController
         view.addSubview(tableView)
+        barButtons()
+        
     }
+    
+    
+    func barButtons () {
+        let add = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(addTapped))
+        self.navigationItem.rightBarButtonItems = [add]
+    }
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -118,5 +127,16 @@ extension WarehouseScreen {
 extension WarehouseScreen {
     func isFiltering() -> Bool {
         return searchController.isActive && !isSearchBarEmpty()
+    }
+}
+
+
+
+extension WarehouseScreen {
+    @objc func addTapped() {
+        print("")
+        // create a new storyboard
+        // go to that storyboard
+        
     }
 }
