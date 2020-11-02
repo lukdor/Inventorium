@@ -13,4 +13,5 @@ struct User {
     let password: String
     let role: String
     let uid: String
+    static let userType: String = "User"
 }
