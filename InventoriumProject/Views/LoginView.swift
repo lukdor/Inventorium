@@ -25,6 +25,7 @@ class LoginView: UIViewController {
         configure_text_field()
         configure_button()
         configure_label()
+	print("x")
     }
     
     @IBAction func button_tapped(_ sender: Any) {
